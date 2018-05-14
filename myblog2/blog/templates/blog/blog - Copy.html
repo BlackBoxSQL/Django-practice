@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{% static 'blog/blogstyle.css' %}">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+	<link href="https://fonts.maateen.me/kalpurush/font.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+	<title>Document</title>
+	
+</head>
+<body>
+	<!-- header -->
+	<div class="container-fluid">
+		<header class="blog-header py-sm-4 py-md-4">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          
+          <div class="col-12 text-center">
+            <a class="blog-header-logo text-dark">Nazibur's Blog & Portfolio</a>
+          </div>
+        </div>
+      </header>
+		
+	</div>
+	<!-- header end -->
+
+
+	<!-- navbar -->
+	<div class="container-fluid">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+        	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+          	<span class="navbar-toggler-icon"></span>
+        	</button>
+			<div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
+          		<ul class="navbar-nav">
+            		<li class="nav-item">
+              			<a class="nav-link" href="#">Home</a>
+            		</li>
+           			<li class="nav-item">
+              			<a class="nav-link" href="#">Github</a>
+            		</li>
+			        <li class="nav-item">
+			            <a class="nav-link" href="#">About me</a>
+				    </li>
+				     <li class="nav-item dropdown">
+			                    <div class="dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">See More</a>
+            <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                <a class="dropdown-item" href="#">Articles</a>
+                <a class="dropdown-item" href="#">Code</a>
+                <a class="dropdown-item" href="#">Projects</a>
+                <li class="dropdown-divider"></li>
+                <li class="dropdown-submenu">
+                   <a  class="dropdown-item" tabindex="-1" href="#">Tutorials</a>
+                  <ul class="dropdown-menu">
+                     <a class="dropdown-item" href="#">Blog</a>
+                     <a class="dropdown-item" href="#">Video</a>
+                     </ul>
+                   <li class="dropdown-submenu">
+                  <a  class="dropdown-item" tabindex="-1" href="#">Others</a>
+                  <ul class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Photography</a>
+                    <a class="dropdown-item" href="#">Stories</a>
+                    <a class="dropdown-item" href="#">Poetry</a>
+                    <a class="dropdown-item" href="#">Guitar Chords</a>
+                  </ul>
+             
+        </div>
+				    </li>
+			</div>
+
+		</nav>
+	</div>
+	<!-- navbar end -->
+
+
+	<!-- image -->
+<div class="container-fluid">
+		<div class="jumbotron jumbotronimageset">
+			<h1 class="display-1" id="jumbotrondisplay">''যখনই মনে হবে জীবনে কিছু করতে পারবে না, তখনই প্রোগ্রামিং কর''</h1><br>
+			<p class="lead" id="jumbotrondisplaypoet">___নাজিবুর রহমান </p>
+	
+		</div>	
+	</div>
+	<!-- image end -->
+	<!-- article area  -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h2 class="blog-post-title">Featured Articles</h2>
+				<!-- tempalate tag here -->
+				<hr>
+				<h3>আমি না শুনি </h3>
+				<p>আমি না শুনি আমি না শুনি আমি না শুনি আমি না শুনি আমি না শুনি আমি না শুনি আমি না শুনি আমি না শুনি আমি না শুনি আমি না শুনি আমি না শুনি আমি না শুনি আমি না শুনি আমি না শুনি আমি না শুনি আমি না শুনি আমি না শুনি আমি না শুনি আমি না শুনি আমি না শুনি আমি না শুনি আমি না শুনি আমি না শুনি আমি না শুনি আমি না শুনি আমি না শুনি আমি না শুনি আমি না শুনি আমি না শুনি আমি না শুনি আমি না শুনি আমি না শুনি আমি না শুনি </p>
+				<!-- tempalate tag here -->
+			</div>
+		</div>
+	</div><br>
+<!-- article area end -->
+<!-- pagination -->
+<div class="container">
+	<ul class="pagination justify-content-center">
+    	<li class="page-item">
+      		<a class="page-link" href="#" aria-label="Previous">
+        		<span aria-hidden="true">&laquo;</span>
+        		<span class="sr-only">Previous</span>
+      		</a>
+    	</li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+        <span class="sr-only">Next</span>
+      </a>
+    </li>
+  </ul>
+</div>
+<!-- pagination end -->
+<!-- footer  -->
+<div class="container">
+	<footer class="blog-footer">
+      <p>&copy; Nazibur's Blog & Portfolio</p>
+    </footer>
+</div>
+
+<!-- footer end -->
+	
+
+
+
+
+
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{% extends "blog/base.html" %}
+{% load static %}
+{% block content %}
+		<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="blog-post-title text-center">My Pet Projects</h2>
+				<!-- tempalate tag here -->
+					{% for projects in project %}
+						<hr>
+						<h4 class="text-center">{{projects.name_of_project|safe}}</h4>
+						<p><b>Project details </b> of "{{projects.name_of_project|safe}}" <br>{{projects.details_of_project|safe}}</p>
+						<a href="{{projects.see_it|safe}}" target="_blank">See full project>>></a>
+				<!-- tempalate tag here -->
+					{% endfor %}
+           </div>
+		</div>
+	</div><br>
+    
+{% endblock content %}

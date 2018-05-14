@@ -1,0 +1,19 @@
+{% extends "blog/base.html" %}
+{% load static %}
+{% block content %}
+		<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="blog-post-title text-center">Poetry</h2>
+				<!-- tempalate tag here -->
+					{% for poetry in poetries %}
+						<hr>
+						<h4 class="text-center">{{poetry.heading|safe}}</h4>
+						<p><center>{{poetry.thepoetry|safe}}</center></p>
+				<!-- tempalate tag here -->
+					{% endfor %}
+           </div>
+		</div>
+	</div><br>
+    
+{% endblock content %}

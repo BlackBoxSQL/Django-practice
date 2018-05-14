@@ -1,0 +1,28 @@
+{% extends "blog/base.html" %}
+{% load static %}
+{% block content %}
+<div class="container-fluid">
+		<div class="jumbotron jumbotronimageset">
+			<h1 class="display-1" id="jumbotrondisplay">''যখনই মনে হবে জীবনে কিছু করতে পারবে না, তখনই প্রোগ্রামিং কর''</h1><br>
+			<p class="lead" id="jumbotrondisplaypoet">___নাজিবুর রহমান </p>
+	
+		</div>	
+	</div>
+	<!-- image end -->
+	<!-- article area  -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="blog-post-title text-center">Latest Articles</h2>
+				<!-- tempalate tag here -->
+					{% for article in latestarticles %}
+						<hr>
+						<h3 class="text-center">{{article.title|safe}}</h3>
+						<p>{{article.content|safe}}</p>
+				<!-- tempalate tag here -->
+					{% endfor %}
+           </div>
+		</div>
+	</div><br>
+<!-- article area end -->
+{% endblock content %}

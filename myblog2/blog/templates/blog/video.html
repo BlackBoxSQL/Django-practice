@@ -1,0 +1,27 @@
+{% extends "blog/base.html" %}
+{% load static %}
+{% block content %}
+<h2 class="blog-post-title text-center">All Video Tutorials</h2>
+<hr>
+<div class="container">
+	{% for videotutorial in vidtut %}
+
+	<div class="row">
+		
+		<div class="col-md-12">
+			
+			<p>{{videotutorial.video_tut_name|safe}}</p>
+			<figure>
+					<div class="embed-responsive embed-responsive-16by9">
+  					{{videotutorial.video_link|safe}}
+					</div>
+			</figure>
+			<hr>
+			<br>
+		</div>
+		
+	</div>
+	{% endfor %}
+</div>
+
+{% endblock content %}

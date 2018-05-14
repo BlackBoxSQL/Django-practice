@@ -1,0 +1,20 @@
+{% extends "blog/base.html" %}
+{% load static %}
+{% block content %}
+		<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="blog-post-title text-center">Codes</h2>
+				<!-- tempalate tag here -->
+					{% for code in codes %}
+						<hr>
+						<p>Online Judge : {{code.sitename|safe}}<br>
+							ProblemID/Name : {{code.problemname|safe}}<br><b>Solution :</b></p>
+						<p>{{code.codesol|safe}}</p>
+				<!-- tempalate tag here -->
+					{% endfor %}
+           </div>
+		</div>
+	</div><br>
+    
+{% endblock content %}

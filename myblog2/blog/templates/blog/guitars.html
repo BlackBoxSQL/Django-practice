@@ -1,0 +1,26 @@
+{% extends "blog/base.html" %}
+{% load static %}
+{% block content %}
+<h2 class="blog-post-title text-center">Guitar chords of my favorite songs </h2>
+<hr>
+<div class="container">
+	{% for guitar in chords %}
+
+	<div class="row">
+		
+		<div class="col-md-12">
+			
+			<p class="lead">Guitar Chords of <b>"{{guitar.song_name|safe}}"</b><br>
+			by Artist: <b>{{guitar.artist|safe}}</b></p>
+			<center>{{guitar.chords|safe}}</center>
+			<hr>
+		</div>
+		
+	</div>
+	{% endfor %}
+</div>
+
+{% endblock content %}
+{{guitar.song_name|safe}}
+{{guitar.artist|safe}}
+{{guitar.chords|safe}}

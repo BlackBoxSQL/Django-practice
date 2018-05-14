@@ -1,0 +1,9 @@
+{% extends "blog/aboutmebase.html" %}
+{% load static %}
+{% block aboutmeh %}
+{% for aboutme in contents %}
+    <p>{{aboutme.content|safe}}</p>
+    <img src="{% static 'blog/2.png'%}" alt="..." class="rounded">
+    
+{% endfor %}
+{% endblock aboutmeh %}

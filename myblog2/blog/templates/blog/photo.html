@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% for photo in photos %}
+        <h1>{{ photography.photo_name|safe }}</h1>
+        <figure>
+              <img src="{% media 'blog/{{photography.photo}}' %}|safe }}" alt="The Pulpit Rock" width="304" height="228">
+        </figure>
+    {% endfor %}
+
+</body>
+</html>

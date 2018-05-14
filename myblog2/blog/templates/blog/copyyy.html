@@ -1,0 +1,10 @@
+	{% for videotutorial in vidtut %}
+					<hr>
+					<h3 class="text-center">{{videotutorial.video_tut_name|safe}}</h3>
+					<p>
+					<div class="embed-responsive embed-responsive-4by3">
+					{{videotutorial.video_tut|safe}}
+					</div>
+					</p>
+				<!-- tempalate tag here -->
+					{% endfor %}
